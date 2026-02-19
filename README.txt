@@ -16,7 +16,7 @@ How to use (Netlify)
    - Identity: Enable
    - Git Gateway: Enable
    - Invite yourself (email) so you can login.
-3) Open: https://YOUR-SITE.netlify.app/admin
+3) Open: https://stylemitrafashionn.netlify.app/admin
 4) Edit products, upload images, Save -> Netlify redeploys automatically.
 
 Important
