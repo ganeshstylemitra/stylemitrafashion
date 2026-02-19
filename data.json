@@ -1,0 +1,62 @@
+{
+  "brandName": "Style Mitra Fashion",
+  "topBarText": "WhatsApp Order: 9284639028 • All Over India Shipping",
+  "hero": {
+    "title": "STYLE MITRA FASHION",
+    "subtitle": "Trendy Fashion | Best Price | Direct WhatsApp Order",
+    "buttonText": "Order on WhatsApp",
+    "image": "/images/uploads/hero.svg"
+  },
+  "whatsappNumber": "919284639028",
+  "categories": [
+    {
+      "key": "tops",
+      "label": "TOPS"
+    },
+    {
+      "key": "jeans",
+      "label": "JEANS"
+    },
+    {
+      "key": "sets",
+      "label": "SETS"
+    },
+    {
+      "key": "new-arrivals",
+      "label": "NEW ARRIVALS"
+    }
+  ],
+  "sections": {
+    "trendingTitle": "TRENDING NOW"
+  },
+  "products": [
+    {
+      "title": "Black Ribbed Halter Top",
+      "price": 499,
+      "category": "tops",
+      "image": "/images/uploads/product-1.svg",
+      "active": true
+    },
+    {
+      "title": "Blue High-Waist Jeans",
+      "price": 899,
+      "category": "jeans",
+      "image": "/images/uploads/product-2.svg",
+      "active": true
+    },
+    {
+      "title": "Co-ord Set (Peach)",
+      "price": 1199,
+      "category": "sets",
+      "image": "/images/uploads/product-3.svg",
+      "active": true
+    },
+    {
+      "title": "New Arrival Dress",
+      "price": 999,
+      "category": "new-arrivals",
+      "image": "/images/uploads/product-4.svg",
+      "active": true
+    }
+  ]
+}

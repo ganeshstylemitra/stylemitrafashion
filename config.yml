@@ -1,0 +1,50 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "site"
+    label: "Site Content"
+    files:
+      - name: "data"
+        label: "Home + Products"
+        file: "content/data.json"
+        format: "json"
+        fields:
+          - { label: "Brand Name", name: "brandName", widget: "string" }
+          - { label: "Top Bar Text", name: "topBarText", widget: "string" }
+          - { label: "WhatsApp Number (E.164)", name: "whatsappNumber", widget: "string", hint: "Use 91 + number. Example: 919284639028" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+              - { label: "Hero Image", name: "image", widget: "image" }
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: "Key", name: "key", widget: "string", hint: "Use: tops / jeans / sets / new-arrivals" }
+              - { label: "Label", name: "label", widget: "string" }
+          - label: "Sections"
+            name: "sections"
+            widget: "object"
+            fields:
+              - { label: "Trending Title", name: "trendingTitle", widget: "string" }
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            summary: "{{fields.title}} — ₹{{fields.price}}"
+            fields:
+              - { label: "Active", name: "active", widget: "boolean", default: true }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Price", name: "price", widget: "number" }
+              - { label: "Category", name: "category", widget: "select", options: ["tops","jeans","sets","new-arrivals"] }
+              - { label: "Image", name: "image", widget: "image" }
